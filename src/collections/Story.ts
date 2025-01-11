@@ -51,7 +51,7 @@ export const Stories: CollectionConfig = {
         },
         {
           admin: {
-            condition: (ctx, data) => data.character != 'user',
+            // condition: (ctx, data) => data.character != 'user',
           },
           name: 'text',
           label: 'Text',
