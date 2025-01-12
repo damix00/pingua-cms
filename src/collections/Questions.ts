@@ -14,11 +14,6 @@ export enum AppCharacter {
   Penguin = 'penguin',
   Glorp = 'glorp',
   Fujio = 'fujio',
-  Alex = 'alex',
-  Toby = 'toby',
-  Sophia = 'sophia',
-  Henry = 'henry',
-  MrsMiller = 'mrs-miller',
   Jaxon = 'jaxon',
   Sara = 'sara',
 }
@@ -80,26 +75,6 @@ export const Questions: CollectionConfig = {
             {
               label: 'Fujio (japanac, opak, borilac, hrabar)',
               value: AppCharacter.Fujio,
-            },
-            {
-              label: 'Alex (mačka, lijena, provocira, voli jesti, bucmasta)',
-              value: AppCharacter.Alex,
-            },
-            {
-              label: 'Toby (kapibara, glup)',
-              value: AppCharacter.Toby,
-            },
-            {
-              label: 'Sophia (žena, mudra)',
-              value: AppCharacter.Sophia,
-            },
-            {
-              label: 'Henry (muškarac, biznismen, ima pametnijeg posla, misli da je najvažniji)',
-              value: AppCharacter.Henry,
-            },
-            {
-              label: 'Mrs. Miller (učiteljica, stara, stroga)',
-              value: AppCharacter.MrsMiller,
             },
             {
               label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
@@ -224,8 +199,24 @@ export const Questions: CollectionConfig = {
       type: 'select',
       options: [
         {
-          label: 'Penguin',
+          label: 'Pingua',
           value: AppCharacter.Penguin,
+        },
+        {
+          label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
+          value: AppCharacter.Glorp,
+        },
+        {
+          label: 'Fujio (japanac, opak, borilac, hrabar)',
+          value: AppCharacter.Fujio,
+        },
+        {
+          label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
+          value: AppCharacter.Jaxon,
+        },
+        {
+          label: 'Sara (tinejdžerka, svi su joj dosadni, ne zanima je ništa)',
+          value: AppCharacter.Sara,
         },
       ],
     },

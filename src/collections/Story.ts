@@ -56,26 +56,6 @@ export const Stories: CollectionConfig = {
               value: AppCharacter.Fujio,
             },
             {
-              label: 'Alex (mačka, lijena, provocira, voli jesti, bucmasta)',
-              value: AppCharacter.Alex,
-            },
-            {
-              label: 'Toby (kapibara, glup)',
-              value: AppCharacter.Toby,
-            },
-            {
-              label: 'Sophia (žena, mudra)',
-              value: AppCharacter.Sophia,
-            },
-            {
-              label: 'Henry (muškarac, biznismen, ima pametnijeg posla, misli da je najvažniji)',
-              value: AppCharacter.Henry,
-            },
-            {
-              label: 'Mrs. Miller (učiteljica, stara, stroga)',
-              value: AppCharacter.MrsMiller,
-            },
-            {
               label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
               value: AppCharacter.Jaxon,
             },
