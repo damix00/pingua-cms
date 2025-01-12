@@ -20,9 +20,6 @@ importers:
       '@payloadcms/richtext-lexical':
         specifier: 3.9.0
         version: 3.9.0(cmn2uibitysswvvhzev3crgw5a)
-      cross-env:
-        specifier: ^7.0.3
-        version: 7.0.3
       graphql:
         specifier: ^16.8.1
         version: 16.10.0
@@ -32,6 +29,9 @@ importers:
       payload:
         specifier: 3.9.0
         version: 3.9.0(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)
+      qs-esm:
+        specifier: ^7.0.2
+        version: 7.0.2
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -54,6 +54,9 @@ importers:
       '@types/react-dom':
         specifier: 19.0.1
         version: 19.0.1
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
       eslint:
         specifier: ^9.16.0
         version: 9.17.0

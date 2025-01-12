@@ -47,6 +47,42 @@ export const Stories: CollectionConfig = {
               label: 'Pingua',
               value: AppCharacter.Penguin,
             },
+            {
+              label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
+              value: AppCharacter.Glorp,
+            },
+            {
+              label: 'Fujio (japanac, opak, borilac, hrabar)',
+              value: AppCharacter.Fujio,
+            },
+            {
+              label: 'Alex (mačka, lijena, provocira, voli jesti, bucmasta)',
+              value: AppCharacter.Alex,
+            },
+            {
+              label: 'Toby (kapibara, glup)',
+              value: AppCharacter.Toby,
+            },
+            {
+              label: 'Sophia (žena, mudra)',
+              value: AppCharacter.Sophia,
+            },
+            {
+              label: 'Henry (muškarac, biznismen, ima pametnijeg posla, misli da je najvažniji)',
+              value: AppCharacter.Henry,
+            },
+            {
+              label: 'Mrs. Miller (učiteljica, stara, stroga)',
+              value: AppCharacter.MrsMiller,
+            },
+            {
+              label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
+              value: AppCharacter.Jaxon,
+            },
+            {
+              label: 'Sara (tinejdžerka, svi su joj dosadni, ne zanima je ništa)',
+              value: AppCharacter.Sara,
+            },
           ],
         },
         {
