@@ -4,18 +4,12 @@ import { withPayload } from '@payloadcms/next/withPayload';
 const nextConfig = {
   experimental: {
     serverActions: {
-      allowedForwardedHosts: [
-        'localhost',
+      allowedOrigins: [
+        'localhost:3000',
         'pingua-cms.latinary.com',
         'pingua-api.latinary.com',
-        'pingua_cms',
+        'pingua.latinary.com',
         '*.latinary.com',
-      ],
-      allowedOrigins: [
-        'http://localhost:3000',
-        'https://pingua-cms.latinary.com',
-        'https://pingua-api.latinary.com',
-        'https://pingua.latinary.com',
       ],
     },
   },
