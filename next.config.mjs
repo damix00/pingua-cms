@@ -8,6 +8,7 @@ const nextConfig = {
         'localhost',
         'pingua-cms.latinary.com',
         'pingua-api.latinary.com',
+        'pingua_cms',
         '*.latinary.com',
       ],
       allowedOrigins: [
