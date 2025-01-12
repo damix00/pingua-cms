@@ -2,6 +2,7 @@ version: '3'
 
 services:
   pingua-cms:
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile

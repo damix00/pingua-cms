@@ -18,6 +18,29 @@ export enum AppCharacter {
   Sara = 'sara',
 }
 
+export const characters = [
+  {
+    label: 'Pingua',
+    value: AppCharacter.Penguin,
+  },
+  {
+    label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
+    value: AppCharacter.Glorp,
+  },
+  {
+    label: 'Fujio (japanac, opak, borilac, hrabar)',
+    value: AppCharacter.Fujio,
+  },
+  {
+    label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
+    value: AppCharacter.Jaxon,
+  },
+  {
+    label: 'Sara (kawaii uwu, naporna)',
+    value: AppCharacter.Sara,
+  },
+];
+
 const isMultipleChoice = (ctx: any) => {
   return (
     ctx.questionType === QuestionType.MultipleChoice ||
@@ -63,28 +86,7 @@ export const Questions: CollectionConfig = {
           name: 'character',
           label: 'Character',
           type: 'select',
-          options: [
-            {
-              label: 'Pingua',
-              value: AppCharacter.Penguin,
-            },
-            {
-              label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
-              value: AppCharacter.Glorp,
-            },
-            {
-              label: 'Fujio (japanac, opak, borilac, hrabar)',
-              value: AppCharacter.Fujio,
-            },
-            {
-              label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
-              value: AppCharacter.Jaxon,
-            },
-            {
-              label: 'Sara (tinejdžerka, svi su joj dosadni, ne zanima je ništa)',
-              value: AppCharacter.Sara,
-            },
-          ],
+          options: characters,
         },
         {
           name: 'questionType',
@@ -197,28 +199,7 @@ export const Questions: CollectionConfig = {
       name: 'character',
       label: 'Character',
       type: 'select',
-      options: [
-        {
-          label: 'Pingua',
-          value: AppCharacter.Penguin,
-        },
-        {
-          label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
-          value: AppCharacter.Glorp,
-        },
-        {
-          label: 'Fujio (japanac, opak, borilac, hrabar)',
-          value: AppCharacter.Fujio,
-        },
-        {
-          label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
-          value: AppCharacter.Jaxon,
-        },
-        {
-          label: 'Sara (tinejdžerka, svi su joj dosadni, ne zanima je ništa)',
-          value: AppCharacter.Sara,
-        },
-      ],
+      options: characters,
     },
     {
       admin: {

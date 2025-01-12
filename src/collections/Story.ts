@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload';
-import { AppCharacter } from './Questions';
+import { AppCharacter, characters } from './Questions';
 
 export const Stories: CollectionConfig = {
   slug: 'stories',
@@ -43,26 +43,7 @@ export const Stories: CollectionConfig = {
               label: 'Narrator',
               value: 'narrator',
             },
-            {
-              label: 'Pingua',
-              value: AppCharacter.Penguin,
-            },
-            {
-              label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
-              value: AppCharacter.Glorp,
-            },
-            {
-              label: 'Fujio (japanac, opak, borilac, hrabar)',
-              value: AppCharacter.Fujio,
-            },
-            {
-              label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
-              value: AppCharacter.Jaxon,
-            },
-            {
-              label: 'Sara (tinejdžerka, svi su joj dosadni, ne zanima je ništa)',
-              value: AppCharacter.Sara,
-            },
+            ...characters,
           ],
         },
         {
