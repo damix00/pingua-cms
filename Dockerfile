@@ -11,7 +11,6 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN corepack enable pnpm && pnpm i --frozen-lockfile;
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -26,7 +25,10 @@ COPY . .
 
 ENV NODE_ENV production
 
-RUN corepack enable pnpm && pnpm run build;
+RUN npm install -g corepack@latest
+RUN corepack enable && pnpm i
+RUN corepack install -g pnpm@10.5.1
+RUN pnpm run build
 
 # Production image, copy all the files and run next
 # FROM base AS runner
