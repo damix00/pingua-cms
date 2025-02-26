@@ -7,15 +7,14 @@ export enum QuestionType {
   ListenAndChoose = 'listen-and-choose',
   RecordVoice = 'record-voice',
   Translate = 'translate',
-  TrueOrFalse = 'true-or-false',
 }
 
 export enum AppCharacter {
   Penguin = 'penguin',
-  Glorp = 'glorp',
   Fujio = 'fujio',
   Jaxon = 'jaxon',
   Sara = 'sara',
+  MrJackson = 'mr-jackson',
 }
 
 export const characters = [
@@ -24,28 +23,27 @@ export const characters = [
     value: AppCharacter.Penguin,
   },
   {
-    label: 'Glorp (vanzemaljac, znatiželjan, misteriozan, neobičan)',
-    value: AppCharacter.Glorp,
-  },
-  {
-    label: 'Fujio (japanac, opak, borilac, hrabar)',
+    label: 'Fujio (opak, borilac, hrabar, samuraj, fitness expert)',
     value: AppCharacter.Fujio,
   },
   {
-    label: 'Jaxon (crnac, beatboxer, reper, budući bogataš)',
+    label: 'Jaxon (beatboxer, reper, budući bogataš)',
     value: AppCharacter.Jaxon,
   },
   {
     label: 'Sara (kawaii uwu, naporna)',
     value: AppCharacter.Sara,
   },
+  {
+    label: 'Mr. Jackson (učitelj, strog, ozbiljan, voli ispravljati gramatičke greške)',
+    value: AppCharacter.MrJackson,
+  },
 ];
 
 const isMultipleChoice = (ctx: any) => {
   return (
     ctx.questionType === QuestionType.MultipleChoice ||
-    ctx.questionType === QuestionType.ListenAndChoose ||
-    ctx.questionType === QuestionType.TrueOrFalse
+    ctx.questionType === QuestionType.ListenAndChoose
   );
 };
 
@@ -83,12 +81,6 @@ export const Questions: CollectionConfig = {
       label: 'Variations',
       fields: [
         {
-          name: 'character',
-          label: 'Character',
-          type: 'select',
-          options: characters,
-        },
-        {
           name: 'questionType',
           label: 'Question Type',
           type: 'select',
@@ -117,10 +109,6 @@ export const Questions: CollectionConfig = {
             {
               label: 'Prevedi',
               value: QuestionType.Translate,
-            },
-            {
-              label: 'Točno ili netočno',
-              value: QuestionType.TrueOrFalse,
             },
           ],
         },
@@ -189,17 +177,6 @@ export const Questions: CollectionConfig = {
           relationTo: 'media',
         },
       ],
-    },
-    {
-      admin: {
-        condition: (ctx, data) => {
-          return !ctx.isVariation;
-        },
-      },
-      name: 'character',
-      label: 'Character',
-      type: 'select',
-      options: characters,
     },
     {
       admin: {
