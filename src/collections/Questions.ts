@@ -118,12 +118,6 @@ export const Questions: CollectionConfig = {
           type: 'textarea',
         },
         {
-          name: 'image',
-          label: 'Image',
-          type: 'upload',
-          relationTo: 'media',
-        },
-        {
           required: true,
           admin: {
             condition: (ctx, data) => {
@@ -146,12 +140,6 @@ export const Questions: CollectionConfig = {
               type: 'checkbox',
               required: true,
             },
-            {
-              name: 'answerImage',
-              label: 'Answer Image',
-              type: 'upload',
-              relationTo: 'media',
-            },
           ],
         },
         {
@@ -164,17 +152,6 @@ export const Questions: CollectionConfig = {
           label: 'Correct Answer',
           type: 'text',
           required: true,
-        },
-        {
-          admin: {
-            condition: (ctx, data) => {
-              return !isMultipleChoice(data);
-            },
-          },
-          name: 'answerImage',
-          label: 'Answer Image',
-          type: 'upload',
-          relationTo: 'media',
         },
       ],
     },
@@ -224,17 +201,7 @@ export const Questions: CollectionConfig = {
       label: 'Question (English!)',
       type: 'textarea',
     },
-    {
-      admin: {
-        condition: (ctx, data) => {
-          return !ctx.isVariation;
-        },
-      },
-      name: 'image',
-      label: 'Image',
-      type: 'upload',
-      relationTo: 'media',
-    },
+
     {
       required: true,
       admin: {
@@ -258,12 +225,6 @@ export const Questions: CollectionConfig = {
           type: 'checkbox',
           required: true,
         },
-        {
-          name: 'answerImage',
-          label: 'Answer Image',
-          type: 'upload',
-          relationTo: 'media',
-        },
       ],
     },
     {
@@ -275,17 +236,6 @@ export const Questions: CollectionConfig = {
       name: 'correctAnswer',
       label: 'Correct Answer',
       type: 'text',
-    },
-    {
-      admin: {
-        condition: (ctx, data) => {
-          return !isMultipleChoice(ctx) && !ctx.isVariation;
-        },
-      },
-      name: 'answerImage',
-      label: 'Answer Image',
-      type: 'upload',
-      relationTo: 'media',
     },
   ],
 };

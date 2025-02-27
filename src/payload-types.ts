@@ -31,10 +31,6 @@ export interface Question {
   };
   questionType: QuestionType;
   question: string;
-  image?: {
-    relationTo: 'media';
-    value: string | Media;
-  };
   answers: {
     answer: string;
   }[];
