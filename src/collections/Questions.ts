@@ -27,11 +27,11 @@ export const characters = [
     value: AppCharacter.Fujio,
   },
   {
-    label: 'Jaxon (beatboxer, reper, budući bogataš)',
+    label: 'Jaxon (beatboxer, reper, pop culture expert, zabavan)',
     value: AppCharacter.Jaxon,
   },
   {
-    label: 'Sara (kawaii uwu, naporna)',
+    label: 'Sara (tinejdžerica)',
     value: AppCharacter.Sara,
   },
   {
