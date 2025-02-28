@@ -14,7 +14,7 @@ export enum AppCharacter {
   Fujio = 'fujio',
   Jaxon = 'jaxon',
   Sara = 'sara',
-  MrJackson = 'mr-jackson',
+  MrWilliams = 'mr-williams',
 }
 
 export const characters = [
@@ -35,8 +35,8 @@ export const characters = [
     value: AppCharacter.Sara,
   },
   {
-    label: 'Mr. Jackson (učitelj, strog, ozbiljan, voli ispravljati gramatičke greške)',
-    value: AppCharacter.MrJackson,
+    label: 'Mr. Williams (učitelj, strog, ozbiljan, voli ispravljati gramatičke greške)',
+    value: AppCharacter.MrWilliams,
   },
 ];
 
