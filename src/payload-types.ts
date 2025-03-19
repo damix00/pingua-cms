@@ -8,6 +8,15 @@
 
 import { QuestionType } from './collections/Questions';
 
+export interface DialogueTheme {
+  title: string;
+  description: string;
+  imageUrl: string;
+  aiRole: string;
+  aiVoice: string;
+  type: 'beginner' | 'intermediate' | 'advanced' | 'fluent';
+}
+
 export interface Section {
   id: string;
   level: number;
@@ -56,6 +65,7 @@ export interface Config {
     units: Unit;
     questions: Question;
     stories: Story;
+    'dialogue-themes': DialogueTheme;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
@@ -156,6 +166,7 @@ export interface PayloadMigration {
   updatedAt: string;
   createdAt: string;
 }
+
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "auth".
