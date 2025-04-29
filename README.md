@@ -2,6 +2,8 @@
 
 The **Pingua CMS** is an internal tool used by administrators to manage the content and structure of the Pingua language learning application. It supports multilingual content management, AI-assisted translation and TTS generation, and structured educational unit design.
 
+Check out the [mobile app](https://github.com/damix00/pingua-expo-app) for more information about the project.
+
 ---
 
 ## Tech Stack
